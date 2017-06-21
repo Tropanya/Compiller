@@ -2,22 +2,25 @@
 #define PARSER_H
 
 #include <iostream>
+#include <stack>
 
 #include "Lexer.h"
+#include "DSMP.h"
 
 class CParser
 {
 private:
 	std::vector<CToken> _tokens;
-	CToken _current;
-	unsigned int i;
+	CDSMP _DSMP;
+	bool _accepted;
+private:
+	CAction moveAction(int state, E_TOKEN_TYPE type);
+	int moveGoto(int state, int col);
 public:
 	CParser(std::vector<CToken> tokens);
 	~CParser();
 
-	void Expr();
-	void Term();
-	void Match(E_TOKEN_TYPE type);
+	void Parsing();
 };
 
-#endif // !PARSER_H
+#endif // PARSER_H

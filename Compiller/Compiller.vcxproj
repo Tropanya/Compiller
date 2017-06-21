@@ -139,16 +139,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\DSMP.cpp" />
     <ClCompile Include="src\Parser.cpp" />
-    <ClCompile Include="src\DSM.cpp" />
+    <ClCompile Include="src\DSML.cpp" />
     <ClCompile Include="src\utils\FileUtils.cpp" />
     <ClCompile Include="src\Lexer.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="src\Token.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\DSMP.h" />
     <ClInclude Include="src\Parser.h" />
-    <ClInclude Include="src\DSM.h" />
+    <ClInclude Include="src\DSML.h" />
     <ClInclude Include="src\utils\FileUtils.h" />
     <ClInclude Include="src\Lexer.h" />
     <ClInclude Include="src\Token.h" />

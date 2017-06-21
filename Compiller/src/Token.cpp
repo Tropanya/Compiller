@@ -39,7 +39,7 @@ void CToken::SetProp(std::string prop)
 
 int CToken::GetLine()
 {
-	return 0;
+	return this->_line;
 }
 
 CToken CToken::GetToken(E_TOKEN_TYPE type, std::string prop, int line)

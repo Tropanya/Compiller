@@ -23,7 +23,8 @@ enum E_TOKEN_TYPE
 	TT_R_FB			= 15,
 	TT_SEMICOLON	= 16,
 	TT_NUMBER		= 17,
-	TT_IDENTIF		= 18
+	TT_IDENTIF		= 18,
+	TT_END			= 19
 };
 
 class CToken

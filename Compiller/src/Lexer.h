@@ -4,7 +4,7 @@
 #include <vector>
 
 #include "Token.h"
-#include "DSM.h"
+#include "DSML.h"
 #include "utils/FileUtils.h"
 
 class CLexer
@@ -12,7 +12,7 @@ class CLexer
 private:
 	std::vector<CToken> _tokens;
 	std::string _fileBuff;
-	CDSM _DSM;
+	CDSML _DSML;
 	bool _found;
 private:
 	int move(int state, char current);

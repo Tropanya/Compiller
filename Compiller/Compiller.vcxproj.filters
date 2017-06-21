@@ -27,10 +27,13 @@
     <ClCompile Include="src\Token.cpp">
       <Filter>Файлы исходного кода</Filter>
     </ClCompile>
-    <ClCompile Include="src\DSM.cpp">
+    <ClCompile Include="src\Parser.cpp">
       <Filter>Файлы исходного кода</Filter>
     </ClCompile>
-    <ClCompile Include="src\Parser.cpp">
+    <ClCompile Include="src\DSML.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DSMP.cpp">
       <Filter>Файлы исходного кода</Filter>
     </ClCompile>
   </ItemGroup>
@@ -49,10 +52,13 @@
     <ClInclude Include="src\Token.h">
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
-    <ClInclude Include="src\DSM.h">
+    <ClInclude Include="src\Parser.h">
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
-    <ClInclude Include="src\Parser.h">
+    <ClInclude Include="src\DSML.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DSMP.h">
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
   </ItemGroup>

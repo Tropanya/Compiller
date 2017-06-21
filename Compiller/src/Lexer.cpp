@@ -1,18 +1,16 @@
 #include "Lexer.h"
 
-CLexer::CLexer(const char* filePath)
-{
-	_fileBuff = CFileUtils::read_file(filePath);
-	_found = false;
-}
+CLexer::CLexer(const char* filePath):
+	_fileBuff(CFileUtils::read_file(filePath)), _found(false)
+{ }
 
 CLexer::~CLexer()
 { }
 
 int CLexer::move(int state, char current)
 {
-	int col = _DSM.GetDSMCol(current - '(');
-	return _DSM.GetDSMElem(state, col);
+	int col = _DSML.GetDSMLCol(current - '(');
+	return _DSML.GetDSMLElem(state, col);
 }
 
 std::vector<CToken> CLexer::FindTokens()
@@ -287,5 +285,8 @@ std::vector<CToken> CLexer::FindTokens()
 			_found = false;
 		}
 	}
+
+	_tokens.push_back(CToken(TT_END, "$", lineCount));
+
 	return _tokens;
 }
