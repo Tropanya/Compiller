@@ -46,7 +46,8 @@ void CParser::Parsing()
 				states.pop();
 			}
 
-			states.push(moveGoto(states.top(), currentAction.GetElem()));
+			if(!(states.top() == moveGoto(states.top(), currentAction.GetElem())))
+				states.push(moveGoto(states.top(), currentAction.GetElem()));
 			break;
 		case AT_A:
 			_accepted = true;
