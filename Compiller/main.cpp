@@ -3,8 +3,6 @@
 #include "src/Lexer.h"
 #include "src/Parser.h"
 
-#include "src/DSMP.h"
-
 int main()
 {
 	CLexer lexer("dfa.txt");
@@ -19,9 +17,17 @@ int main()
 
 	std::cout << "--------Postfix--------" << std::endl;
 
+	std::cout << std::endl;
+	std::cout << std::endl;
+	std::cout << std::endl;
+
 	CParser parser(tokens);
 
-	parser.Parsing();
+	CTree tree = parser.Parsing();
+
+	std::cout << std::endl;
+	std::cout << std::endl;
+	std::cout << std::endl;
 
 	std::cout << std::endl << "----------End----------" << std::endl;
 		

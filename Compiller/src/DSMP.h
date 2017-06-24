@@ -28,8 +28,7 @@ public:
 	int GetElem();
 	void SetElem (int v);
 
-	int Get(CAction action);
-	int Get(E_ACTION_TYPE type, int index);
+	int Get();
 } typedef act;
 
 class CDSMP

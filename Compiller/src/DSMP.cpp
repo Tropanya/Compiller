@@ -50,37 +50,20 @@ void CAction::SetElem(int v)
 	this->_index = v;
 }
 
-int CAction::Get(CAction action)
+int CAction::Get()
 {
-	switch (action.GetType())
+	switch (_actionType)
 	{
 	case AT_E:
-		return _error[action.GetElem()];
+		return _error[_index];
 	case AT_S:
-		return _shift[action.GetElem()];
+		return _shift[_index];
 	case AT_R:
-		return _reduce[action.GetElem()];
+		return _reduce[_index];
 	case AT_A:
-		return _accept[action.GetElem()];
+		return _accept[_index];
 	default:
-		return _error[action.GetElem()];
-	}
-}
-
-int CAction::Get(E_ACTION_TYPE type, int index)
-{
-	switch (type)
-	{
-	case AT_E:
-		return _error[index];
-	case AT_S:
-		return _shift[index];
-	case AT_R:
-		return _reduce[index];
-	case AT_A:
-		return _accept[index];
-	default:
-		return _error[index];
+		return _error[_index];
 	}
 }
 

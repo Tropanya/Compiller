@@ -1,50 +1,14 @@
 int a = 10;
 int b = 20;
 
-while(a > 3)
+while(a < 11)
 {
-	if(a > 5)
+	if(b > 15)
 	{
-		a = a - 2;
-		b = b - 2;
-
+		b = b - 3;
 	}
 	else
 	{
-		b = b + 1;
-		b = b - 2;
-		b = b - 2;
+		a = a + 1;
 	}
 }
-
-while(a > 3)
-{
-	if(a > 5)
-	{
-		a = a - 2;
-		b = b - 2;
-
-		while(a > 3)
-		{
-			a = a - 2;
-			b = b - 2;
-		}
-	}
-	else
-	{
-		b = b + 1 * 8 + (c - 4);
-		b = b - 2;
-		b = b - 2;
-
-		while(a > 3)
-		{
-			a = a - 2;
-			b = b - 2;
-		}
-	}
-}
-
-int c = 30;
-
-a = (a);
-a = (1000);

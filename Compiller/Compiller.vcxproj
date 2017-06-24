@@ -146,6 +146,7 @@
     <ClCompile Include="src\Lexer.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="src\Token.cpp" />
+    <ClCompile Include="src\Tree.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\DSMP.h" />
@@ -154,6 +155,7 @@
     <ClInclude Include="src\utils\FileUtils.h" />
     <ClInclude Include="src\Lexer.h" />
     <ClInclude Include="src\Token.h" />
+    <ClInclude Include="src\Tree.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="dfa.txt" />
